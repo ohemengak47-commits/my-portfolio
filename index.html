@@ -54,10 +54,9 @@ section{padding-block:clamp(64px,9vw,112px)}
 /* nav */
 .nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--board) 92%,transparent);backdrop-filter:blur(10px);color:var(--on-board)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
-.brand{font:800 1.1rem var(--display);text-decoration:none;display:flex;align-items:center;gap:10px}
-.brand .dot{width:10px;height:10px;border-radius:50%;background:var(--rec);box-shadow:0 0 0 4px color-mix(in srgb,var(--rec) 25%,transparent);animation:blink 1.6s steps(2) infinite}
+.brand{font:800 1.5rem var(--display);text-decoration:none;display:flex;align-items:center;gap:10px}
 .nav ul{list-style:none;display:flex;gap:26px;margin:0;padding:0;font-size:.93rem}
-.nav ul a{text-decoration:none;color:var(--on-board-muted)}
+.nav ul a{text-decoration:none;color:var(--on-board-muted);font-weight:700}
 .nav ul a:hover{color:var(--on-board)}
 .nav .btn{padding:9px 18px;font-size:.9rem}
 @media (max-width:860px){.nav ul{display:none}}
@@ -291,7 +290,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 <nav class="nav" aria-label="Main">
   <div class="wrap">
-    <a class="brand" href="#top"><span class="dot" aria-hidden="true"></span>Anthony Ohemeng</a>
+    <a class="brand" href="#top">Anthony Ohemeng</a>
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#work">Work</a></li>
@@ -324,10 +323,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     <div class="monitor" aria-label="From learning indicator to final video, in five frames">
       <div class="screen" id="screen">
         <span class="corner c1"></span><span class="corner c2"></span><span class="corner c3"></span><span class="corner c4"></span>
-        <div class="hud">
+        <!-- <div class="hud">
           <div class="row"><span class="rec"><i></i>REC</span><span id="tc">00:00:00:00</span></div>
           <div class="row"><span>16:9 · 1080p</span><span id="stageName">INDICATOR</span></div>
-        </div>
+        </div> -->
         <div class="stage on"><div class="card"><small>Learning indicator · B9.3.1.1.1</small><p>“Explain the concept of the circulatory system and the function of each part.”</p></div></div>
         <div class="stage"><div class="card"><small>Script · Scene 2</small><p>Every second, your heart pumps blood through a network of tubes called blood vessels…</p></div></div>
         <div class="stage"><div class="card"><small>AI prompt (excerpt)</small><code>Ghanaian science teacher in a modern classroom, labelled circulatory system diagram on screen behind her…</code></div></div>
