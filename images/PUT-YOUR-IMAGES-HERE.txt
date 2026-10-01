@@ -1,0 +1,2 @@
+Put your thumbnails and portrait in this folder, e.g. crop.jpg, science.jpg, anthony.jpg
+Then set image:"images/crop.jpg" (and photo:"images/anthony.jpg") in index.html.
